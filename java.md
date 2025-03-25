@@ -1,21 +1,21 @@
-Here are the Java programs along with their aim, a very short algorithm, basic program, and expected result.
+Sure! Here’s the content in Markdown format:
 
-⸻
+```markdown
+# Java Programs Overview
 
-Program 9: Check if a number is even or odd
+## Program 9: Check if a number is even or odd
 
-Aim:
-
+**Aim:**  
 Write a basic Java program to print whether the given number is even or odd.
 
-Algorithm:
-	1.	Take an input number.
-	2.	Check if number % 2 == 0.
-	•	If true, print “Even”.
-	•	Else, print “Odd”.
+**Algorithm:**
+1. Take an input number.
+2. Check if `number % 2 == 0`.
+   - If true, print “Even”.
+   - Else, print “Odd”.
 
-Program:
-
+**Program:**
+```java
 import java.util.Scanner;
 
 public class EvenOdd {
@@ -30,32 +30,31 @@ public class EvenOdd {
         sc.close();
     }
 }
+```
 
-Result:
-
-If input = 4 → Output: “4 is Even”
+**Result:**  
+If input = 4 → Output: “4 is Even”  
 If input = 7 → Output: “7 is Odd”
 
-⸻
+---
 
-Program 10: Swap two numbers with and without a temporary variable
+## Program 10: Swap two numbers with and without a temporary variable
 
-Aim:
-
+**Aim:**  
 Write a basic Java program to swap two numbers with and without using a temporary variable.
 
-Algorithm:
+**Algorithm:**
 
-Using a temporary variable:
-	1.	Store a in a temporary variable.
-	2.	Assign b to a.
-	3.	Assign the temporary variable to b.
+**Using a temporary variable:**
+1. Store `a` in a temporary variable.
+2. Assign `b` to `a`.
+3. Assign the temporary variable to `b`.
 
-Without a temporary variable:
-	1.	Use arithmetic operations (addition and subtraction).
+**Without a temporary variable:**
+1. Use arithmetic operations (addition and subtraction).
 
-Program:
-
+**Program:**
+```java
 import java.util.Scanner;
 
 public class SwapNumbers {
@@ -83,31 +82,27 @@ public class SwapNumbers {
         sc.close();
     }
 }
+```
 
-Result:
-
-If input = 5 8, output:
-
+**Result:**  
+If input = 5, 8 → Output:  
 After swapping (using temp variable): a = 8, b = 5  
-After swapping (without temp variable): a = 5, b = 8  
+After swapping (without temp variable): a = 5, b = 8
 
+---
 
+## Program 11: Display student details using classes and objects
 
-⸻
-
-Program 11: Display student details using classes and objects
-
-Aim:
-
+**Aim:**  
 Write a Java program to display student details using classes and objects.
 
-Algorithm:
-	1.	Create a Student class with name, roll number, and marks as attributes.
-	2.	Create a method to display details.
-	3.	Use main method to create an object and call the display method.
+**Algorithm:**
+1. Create a `Student` class with name, roll number, and marks as attributes.
+2. Create a method to display details.
+3. Use the main method to create an object and call the display method.
 
-Program:
-
+**Program:**
+```java
 class Student {
     String name;
     int rollNo;
@@ -133,30 +128,27 @@ public class StudentDetails {
         s1.display();
     }
 }
+```
 
-Result:
-
+**Result:**  
 Student Name: Sameer  
 Roll Number: 101  
-Marks: 92.5  
+Marks: 92.5
 
+---
 
+## Program 12: Display family tree using hierarchical inheritance
 
-⸻
-
-Program 12: Display family tree using hierarchical inheritance
-
-Aim:
-
+**Aim:**  
 Write a Java program to display a family tree using hierarchical inheritance.
 
-Algorithm:
-	1.	Create a GrandParent class with a method to display details.
-	2.	Create Parent and Child classes that inherit GrandParent.
-	3.	Create objects of Parent and Child classes and call methods.
+**Algorithm:**
+1. Create a `GrandParent` class with a method to display details.
+2. Create `Parent` and `Child` classes that inherit `GrandParent`.
+3. Create objects of `Parent` and `Child` classes and call methods.
 
-Program:
-
+**Program:**
+```java
 class GrandParent {
     void display() {
         System.out.println("I am the Grandparent");
@@ -187,31 +179,28 @@ public class FamilyTree {
         c.reveal();
     }
 }
+```
 
-Result:
-
+**Result:**  
 I am the Grandparent  
 I am the Parent  
 I am the Grandparent  
-I am the Child  
+I am the Child
 
+---
 
+## Program 13: Implement threading to start, sleep, and resume a process
 
-⸻
-
-Program 13: Implement threading to start, sleep, and resume a process
-
-Aim:
-
+**Aim:**  
 Write a Java program implementing threading to make the process start, sleep, and resume.
 
-Algorithm:
-	1.	Create a class extending Thread.
-	2.	Implement run() method with sleep().
-	3.	Start thread and handle sleep using try-catch.
+**Algorithm:**
+1. Create a class extending `Thread`.
+2. Implement `run()` method with `sleep()`.
+3. Start the thread and handle sleep using try-catch.
 
-Program:
-
+**Program:**
+```java
 class MyThread extends Thread {
     public void run() {
         try {
@@ -230,30 +219,27 @@ public class ThreadExample {
         t1.start();
     }
 }
+```
 
-Result:
-
+**Result:**  
 Thread is running...  
 (Thread sleeps for 2 seconds)  
-Thread resumed after sleep.  
+Thread resumed after sleep.
 
+---
 
+## Program 14: Simple Java program using packages
 
-⸻
-
-Program 14: Simple Java program using packages
-
-Aim:
-
+**Aim:**  
 Write a simple Java program using packages.
 
-Algorithm:
-	1.	Create a package.
-	2.	Create a class inside the package.
-	3.	Use the package in the main program.
+**Algorithm:**
+1. Create a package.
+2. Create a class inside the package.
+3. Use the package in the main program.
 
-Program:
-
+**Program:**
+```java
 package mypackage;
 
 public class Hello {
@@ -261,9 +247,10 @@ public class Hello {
         System.out.println("Hello from package!");
     }
 }
+```
 
-Main program:
-
+**Main program:**
+```java
 import mypackage.Hello;
 
 public class PackageDemo {
@@ -272,27 +259,24 @@ public class PackageDemo {
         obj.show();
     }
 }
+```
 
-Result:
+**Result:**  
+Hello from package!
 
-Hello from package!  
+---
 
+## Program 15: Exception handling for divide by zero
 
-
-⸻
-
-Program 15: Exception handling for divide by zero
-
-Aim:
-
+**Aim:**  
 Write a Java program using try-catch, handling divide-by-zero exception.
 
-Algorithm:
-	1.	Take two numbers as input.
-	2.	Try division. If denominator is zero, catch exception.
+**Algorithm:**
+1. Take two numbers as input.
+2. Try division. If denominator is zero, catch exception.
 
-Program:
-
+**Program:**
+```java
 import java.util.Scanner;
 
 public class ExceptionHandling {
@@ -312,25 +296,22 @@ public class ExceptionHandling {
         sc.close();
     }
 }
+```
 
-Result:
-
+**Result:**  
 Enter numerator: 10  
 Enter denominator: 0  
-Error: Division by zero is not allowed.  
+Error: Division by zero is not allowed.
 
+---
 
+## Program 16: Read and write a file
 
-⸻
-
-Program 16: Read and write a file
-
-Aim:
-
+**Aim:**  
 Write a Java program to read and write a file.
 
-Program:
-
+**Program:**
+```java
 import java.io.*;
 
 public class FileReadWrite {
@@ -346,7 +327,10 @@ public class FileReadWrite {
         fr.close();
     }
 }
+```
 
-Result:
+**Result:**  
+Hello, File Handling!
+```
 
-Hello, File Handling!  
+Feel free to use or modify this as needed!
